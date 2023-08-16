@@ -1,3 +1,4 @@
+//This is the C++ Code for a simplw To DO List
 
 #include<iostream>
 #include<string>
@@ -26,7 +27,7 @@ cout<<"\n4.Quit ";
 cout<<"\n\nEnter your choice: ";
 }
 
-void addTask(){
+void addTask(){     //Function to ADD TASK
 Task newTask;
 cout<<"\nEnter the name of new task: ";
 cin.ignore();
@@ -42,7 +43,7 @@ tasks[numTasks]=newTask;
 numTasks++;
 
 }
-void remTask(){
+void remTask(){   //Function to Remove Task
 int taskId;
 cout<<"Enter the task id you want to remove: ";
 cin>>taskId;
@@ -66,7 +67,7 @@ numTasks--;
 cout<<"Task removed succesfully";
 }
 
-void ViewTask(){
+void ViewTask(){   //Function to Remove Task
 if(numTasks==0){
     cout<<"No tasks Found!!!";
 }else{
@@ -84,7 +85,7 @@ cout<<endl;
 
 }
 
-int main(){
+int main(){   //Main Function
 int choice;
 do{
 displayMenu();
